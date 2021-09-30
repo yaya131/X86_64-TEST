@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: openwt x86_64-Official 
+name: Build x86_64-Official 
 
 on:
   repository_dispatch:
