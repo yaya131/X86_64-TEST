@@ -37,6 +37,11 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci
 git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
 
 git clone https://github.com/vernesong/OpenClash.git package/OpenClash
+git clone https://github.com/sirpdboy/sirpdboy-package.git package/sirpdboy-package
+git clone https://github.com/sirpdboy/luci-theme-opentopd.git package/luci-theme-opentopd
+git clone https://github.com/sirpdboy/luci-app-advanced.git package/luci-app-advanced
+git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
+git clone https://github.com/sirpdboy/luci-app-netdata.git package/luci-app-netdata
 
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 
