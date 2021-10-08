@@ -20,7 +20,6 @@
 #echo 'src-git routing https://git.openwrt.org/feed/routing.git;openwrt-21.02
 #echo 'src-git telephony https://git.openwrt.org/feed/telephony.git;openwrt-21.02
 
-echo 'src-git custom https://github.com/kiddin9/openwrt-packages.git;master
-
+echo 'src-git openwrt-packages https://github.com/kiddin9/openwrt-packages' >>feeds.conf.default
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
