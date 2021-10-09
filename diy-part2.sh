@@ -22,8 +22,6 @@ sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generat
 git clone https://github.com/sirpdboy/luci-theme-opentopd.git package/luci-theme-opentopd
 git clone https://github.com/sirpdboy/luci-app-advanced.git package/luci-app-advanced
 git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
-
-rm -rf /lean/luci-app-netdata
 git clone https://github.com/sirpdboy/luci-app-netdata.git package/luci-app-netdata
 git clone https://github.com/sirpdboy/luci-app-poweroffdevice.git package/luci-app-poweroffdevice
 git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/luci-app-autotimeset
