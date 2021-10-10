@@ -37,7 +37,7 @@ git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
 
 git clone https://github.com/vernesong/OpenClash.git package/OpenClash
 
-git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
+#git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
 #git clone https://github.com/sirpdboy/sirpdboy-package.git package/sirpdboy-package
 git clone https://github.com/sirpdboy/luci-theme-opentopd.git package/luci-theme-opentopd
 git clone https://github.com/sirpdboy/luci-app-advanced.git package/luci-app-advanced
