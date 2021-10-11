@@ -49,7 +49,7 @@ git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/luci-app-
 git clone https://github.com/rufengsuixing/luci-app-zerotier.git package/luci-app-zerotier
 git clone https://github.com/rufengsuixing/luci-app-syncdial.git package/luci-app-syncdial
 
-
+git clone https://github.com/kiddin9/luci-app-xlnetacc.git package/luci-app-xlnetacc
 
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 
