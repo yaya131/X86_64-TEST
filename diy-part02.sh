@@ -46,6 +46,10 @@ git clone https://github.com/sirpdboy/luci-app-netdata.git package/luci-app-netd
 git clone https://github.com/sirpdboy/luci-app-poweroffdevice.git package/luci-app-poweroffdevice
 git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/luci-app-autotimeset
 
+git clone https://github.com/rufengsuixing/luci-app-zerotier.git package/luci-app-zerotier
+git clone https://github.com/rufengsuixing/luci-app-syncdial.git package/luci-app-syncdial
+
+
 
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 
