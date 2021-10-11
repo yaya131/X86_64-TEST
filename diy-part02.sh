@@ -16,8 +16,6 @@ sed -i 's/or "1"%>/or "1"%> ( <%=luci.sys.exec("expr `cat \/sys\/class\/thermal\
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generate
 
-# 修改连接数数
-#sed -i 's/net.netfilter.nf_conntrack_max=.*/net.netfilter.nf_conntrack_max=65535/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
 #修正连接数（by ベ七秒鱼ベ）
 sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' package/base-files/files/etc/sysctl.conf
 
@@ -25,20 +23,17 @@ sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' packag
 git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/luci-theme-infinityfreedom
 git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-theme-opentomcat
 git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git package/luci-theme-atmaterial
-# Add luci-theme-argon
 git clone https://github.com/kiddin9/luci-app-dnsfilter.git package/luci-app-dnsfilter
 
+#软件合集
 #git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
-
-#添加额外非必须软件包
-git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
-
-git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
-
-git clone https://github.com/vernesong/OpenClash.git package/OpenClash
-
 #git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
 #git clone https://github.com/sirpdboy/sirpdboy-package.git package/sirpdboy-package
+
+#添加额外软件包
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
+git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
+git clone https://github.com/vernesong/OpenClash.git package/OpenClash
 git clone https://github.com/sirpdboy/luci-theme-opentopd.git package/luci-theme-opentopd
 git clone https://github.com/sirpdboy/luci-app-advanced.git package/luci-app-advanced
 git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
@@ -48,15 +43,10 @@ git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/luci-app-
 
 git clone https://github.com/rufengsuixing/luci-app-zerotier.git package/luci-app-zerotier
 git clone https://github.com/rufengsuixing/luci-app-syncdial.git package/luci-app-syncdial
-
 git clone https://github.com/kiddin9/luci-app-xlnetacc.git package/luci-app-xlnetacc
-
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
-
 git clone https://github.com/zzsj0928/luci-app-pushbot.git package/luci-app-pushbot
-
 git clone https://github.com/riverscn/openwrt-iptvhelper.git package/openwrt-iptvhelper
-
 #git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus
 
 #添加smartdns
