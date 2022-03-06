@@ -35,6 +35,8 @@ git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git package/l
 # Add luci-theme-argon
 git clone https://github.com/kiddin9/luci-app-dnsfilter.git package/luci-app-dnsfilter
 
+git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
+
 #git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 
 #添加额外非必须软件包
