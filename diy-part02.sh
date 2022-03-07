@@ -28,7 +28,7 @@ git clone https://github.com/kiddin9/luci-app-dnsfilter.git package/luci-app-dns
 
 #添加额外软件包
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
-git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
+#git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
 git clone https://github.com/vernesong/OpenClash.git package/OpenClash
 git clone https://github.com/sirpdboy/luci-theme-opentopd.git package/luci-theme-opentopd
 git clone https://github.com/sirpdboy/luci-app-advanced.git package/luci-app-advanced
