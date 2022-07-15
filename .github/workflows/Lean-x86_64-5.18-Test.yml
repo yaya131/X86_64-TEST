@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build x86_64-5.15
+name: Build x86_64-5.18
 
 on:
   repository_dispatch:
@@ -23,7 +23,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: Lean-x86_64-5.15-Test.config
+  CONFIG_FILE: Lean-x86_64-5.18-Test.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
