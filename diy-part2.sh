@@ -17,7 +17,7 @@ sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generat
 
 
 
-rm -rf package/lean/autosamba && git clone https://github.com/sirpdboy/autosamba.git package/autosamba
+＃rm -rf package/lean/autosamba && git clone https://github.com/sirpdboy/autosamba.git package/autosamba
 
 rm -rf package/lean/autocore && git clone https://github.com/sirpdboy/myautocore.git package/myautocore
 
