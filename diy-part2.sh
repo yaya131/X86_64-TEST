@@ -24,9 +24,9 @@ sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generat
 #git clone https://github.com/kenzok8/small-package.git package/small-package
 
 
-git clone https://github.com/linkease/istore.git package/istore
+#git clone https://github.com/linkease/istore.git package/istore
 #sirpdboy
-git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
+#git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
 #git clone https://github.com/sirpdboy/luci-theme-opentopd.git package/luci-theme-opentopd
 #git clone https://github.com/sirpdboy/luci-app-advanced.git package/luci-app-advanced
 #git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
