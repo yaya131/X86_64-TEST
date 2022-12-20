@@ -47,7 +47,7 @@ git clone https://github.com/kiddin9/luci-app-dnsfilter.git package/luci-app-dns
 
 #git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
 
-#git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
+git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 
 #添加额外非必须软件包
 #git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
