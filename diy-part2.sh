@@ -21,7 +21,7 @@ sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generat
 
 #rm -rf package/lean/autocore && git clone https://github.com/sirpdboy/myautocore.git package/myautocore
 
-#git clone https://github.com/kenzok8/small-package.git package/small-package
+git clone https://github.com/kenzok8/small-package.git package/small-package
 
 
 git clone https://github.com/linkease/istore.git package/istore
@@ -47,7 +47,7 @@ git clone https://github.com/kiddin9/luci-app-dnsfilter.git package/luci-app-dns
 
 #git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
 
-git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
+#git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 
 #添加额外非必须软件包
 #git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
