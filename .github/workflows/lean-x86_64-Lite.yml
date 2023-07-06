@@ -37,6 +37,7 @@ env:
 # REPO_BRANCH: main --single-branch
 # REPO_BRANCH: openwrt-18.06-dev --single-branch
 # REPO_BRANCH: openwrt-18.06-k5.4 --single-branch
+  FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: lean-x86_64-Lite.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
