@@ -157,8 +157,6 @@ CONFIG_DEFAULT_autosamba=y
 CONFIG_PACKAGE_autosamba=y
 CONFIG_PACKAGE_luci-app-samba4=y
 
-#删除组件
-# CONFIG_PACKAGE_autosamba is not set
 #删除插件
 # CONFIG_PACKAGE_luci-app-fileassistant is not set
 # CONFIG_DEFAULT_luci-app-ipsec-vpnd is not set
