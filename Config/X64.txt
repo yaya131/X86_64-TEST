@@ -159,7 +159,7 @@ CONFIG_PACKAGE_luci-app-oaf=y
 # CONFIG_PACKAGE_luci-app-uugamebooster is not set
 # CONFIG_PACKAGE_luci-app-diskman is not set
 
-# CONFIG_PACKAGE_luci-app-samba4 is not set
+CONFIG_PACKAGE_luci-app-samba4=y
 # CONFIG_PACKAGE_luci-app-vlmcsd is not set
 # CONFIG_PACKAGE_luci-app-xlnetacc is not set
 # CONFIG_PACKAGE_luci-app-ipsec-vpnd is not set
