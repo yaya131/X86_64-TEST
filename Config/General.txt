@@ -130,10 +130,6 @@ CONFIG_PACKAGE_luci-app-passwall2_INCLUDE_SingBox=y
 CONFIG_PACKAGE_luci-app-passwall2_INCLUDE_V2ray_Plugin=y
 
 
-
-
-
-
 CONFIG_PACKAGE_luci-app-ttyd=y
 CONFIG_PACKAGE_luci-app-upnp=y
 CONFIG_PACKAGE_luci-app-turboacc=y
@@ -142,8 +138,11 @@ CONFIG_PACKAGE_luci-app-autoreboot=y
 CONFIG_PACKAGE_luci-app-zerotier=y
 CONFIG_PACKAGE_luci-app-wol=y
 CONFIG_PACKAGE_luci-app-ddns=y
-CONFIG_PACKAGE_luci-app-samba4=y
 
+#挂载网络共享硬盘
+CONFIG_DEFAULT_autosamba=y
+CONFIG_PACKAGE_autosamba=y
+CONFIG_PACKAGE_luci-app-samba4=y
 
 #删除组件
 # CONFIG_PACKAGE_autosamba is not set
