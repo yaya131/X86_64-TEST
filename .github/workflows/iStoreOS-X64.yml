@@ -18,7 +18,7 @@ jobs:
     uses: ./.github/workflows/OWRT-CORE.yml
     with:
       #编译平台，X64包含X86
-      OWRT_TARGET: X64
+      OWRT_TARGET: iStoreOS
       #默认主题
       OWRT_THEME: design
       #默认主机名
