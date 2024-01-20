@@ -101,37 +101,12 @@ jobs:
       with:
         ccache: 'true'
         prefix: ${{ github.workspace }}/openwrt
-        
-    - name: patch1补丁和自定义设置 #Load custom feeds
-      run: |
-        [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
-        chmod +x $DIY_P1_SH
-        cd openwrt
-        $GITHUB_WORKSPACE/$DIY_P1_SH
 
     - name: 更新源 #Update feeds
       run: cd openwrt && ./scripts/feeds update -a
 
     - name: 安装源 #Install feeds
       run: cd openwrt && ./scripts/feeds install -a
-
-    - name: patch2补丁和自定义设置 #Load custom configuration
-      run: |
-        [ -e files ] && mv files openwrt/files
-        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-        chmod +x $DIY_P2_SH
-        cd openwrt
-        $GITHUB_WORKSPACE/$DIY_P2_SH
-        
-        cd ..
-        platforms=("X86")
-        for i in "${platforms[@]}"; do
-          [ -e config/$i.config ] && cp -r config/$i.config openwrt/.config
-          cd openwrt
-          make defconfig
-          cd ..
-          cp -f openwrt/.config config/$i.config
-        done
         
     - name: 自动更新config #Git auto update config
       uses: stefanzweifel/git-auto-commit-action@v4.16.0
@@ -142,13 +117,6 @@ jobs:
         commit_message: 自动更新config
         branch: main
         commit_author: yaya131
-        
-#    - name: SSH connection to Actions
-#      uses: P3TERX/ssh2actions@v1.0.0
-#      if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
-#      env:
-#        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-#        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
 
     - name: 下载软件包 #Download package
       id: package
